@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shoe Store App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_have_an_account">don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="smart_choice">Smart Choice</string>
+    <string name="choose_the_items_you_are_most_intersted_in">Choose the items you are most intersted in</string>
+    <string name="let_s_explore">Let\'s Explore</string>
+    <string name="instr_text">Is your closet filling up with countless pairs of shoes? Whether you have a penchant for knee high leather boots, six inch Louboutins or casual sneakers, your passion for shoes is so strong that you\'ve decided to open a shoe shop. From learning about market trends to writing a stand-out business plan to attract investors - there are many factors to consider before embarking on your entrepreneurial adventure. In this guide on how to open a shoe shop, you\'ll find everything you need to know about how to kickstart your venture. Want to see your shoe shop succeed? Then read on!</string>
+    <string name="welcome_at_instruction_screen">Welcome at Instruction Screen!!</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="shoe_company">Shoe Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="shoe_description">Shoe Description</string>
+    <string name="logout">Logout</string>
+    <string name="save">Save</string>
+</resources>

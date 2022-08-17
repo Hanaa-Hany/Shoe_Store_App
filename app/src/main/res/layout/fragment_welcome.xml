@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shoes_back_image"
+    android:orientation="vertical"
+    android:gravity="center">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/smart_choice"
+         style="@style/WelcomeScreen"
+         android:layout_marginBottom="@dimen/_10sdp"
+         android:textSize="@dimen/_22ssp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_the_items_you_are_most_intersted_in"
+        style="@style/WelcomeScreen"
+        android:textSize="@dimen/_18ssp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_go_to_instruction_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:backgroundTint="@color/purple_200"
+        app:icon="@drawable/ic_arrow_forward_"
+        app:cornerRadius="@dimen/_20sdp"
+        app:iconGravity="textEnd"
+        />
+
+
+
+</LinearLayout>
+</layout>
