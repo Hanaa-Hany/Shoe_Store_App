@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- I used Linear Layout because the design is very simple and arrange items in card view-->
+<!--I used card view to make corner and make item in card that is make it is great-->
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -6,6 +9,10 @@
 <variable
     name="shoes"
     type="com.hanaahany.shoestoreapp.modle.ShoeDataList" />
+
+        <variable
+            name="vm"
+            type="com.hanaahany.shoestoreapp.ui.fragment.shoelist.ShoeListViewModel" />
     </data>
 
 
@@ -35,7 +42,7 @@
                     android:id="@+id/tv_name_list_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text='@{shoes.name}'
+                    android:text="@={shoes.name}"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
@@ -44,21 +51,21 @@
                     android:id="@+id/tv_desc_list_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@{shoes.desc}"
+                    android:text="@={shoes.desc}"
                     android:gravity="center"
                     android:textColor="@color/black" />
                 <TextView
                     android:id="@+id/tv_company_list_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@{shoes.company}"
+                    android:text="@={shoes.company}"
                     android:gravity="center"
                     android:textColor="@color/black" />
                 <TextView
                     android:id="@+id/tv_size_list_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@{shoes.size}"
+                    android:text="@={shoes.size}"
                     android:gravity="center"
                     android:textColor="@color/black" />
             </LinearLayout>

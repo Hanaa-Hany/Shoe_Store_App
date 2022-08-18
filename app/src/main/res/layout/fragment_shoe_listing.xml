@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- I used Linear Layout because the design is very simple-->
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -7,6 +9,10 @@
         <variable
             name="shoe"
             type="com.hanaahany.shoestoreapp.modle.ShoeDataList" />
+        <variable
+            name="vm"
+            type="com.hanaahany.shoestoreapp.ui.fragment.shoelist.ShoeListViewModel" />
+
     </data>
 
     <LinearLayout

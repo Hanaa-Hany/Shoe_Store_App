@@ -46,16 +46,7 @@
         <action
             android:id="@+id/action_shoeListingFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-        <argument
-            android:name="name_shoes"
-            app:argType="string"
-            app:nullable="true"
-            android:defaultValue=" "/>
-        <argument
-            android:name="size_shoes"
-            app:argType="string"
-            app:nullable="true"
-             android:defaultValue=" "/>
+
 
     </fragment>
     <fragment

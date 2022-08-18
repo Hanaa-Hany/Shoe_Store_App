@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.hanaahany.shoestoreapp.R
@@ -27,6 +28,11 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnSignIn.setOnClickListener {
 
+                findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
+
+            
+        }
+        binding.btnSignUp.setOnClickListener{
             findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
         }
     }

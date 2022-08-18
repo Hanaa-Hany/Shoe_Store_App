@@ -23,7 +23,7 @@ class ShoeListingFragment : Fragment() {
     private val TAG = "ShoeListingFragment"
     private lateinit var binding: FragmentShoeListingBinding
     private  val viewModel:ShoeListViewModel by activityViewModels()
-    val args: ShoeListingFragmentArgs by navArgs()
+    //val args: ShoeListingFragmentArgs by navArgs()
 
     // var list=ArrayList<ShoeDataList>()
     // lateinit var listItems:ArrayList<ShoeDataList>
@@ -42,15 +42,17 @@ class ShoeListingFragment : Fragment() {
 //        viewModel.isEmpty.observe(viewLifecycleOwner){
 //            binding.linear.visibility=if (it)View.VISIBLE else View.GONE
 //        }
+       // binding.vm=viewModel
         viewModel.shoeList.observe(viewLifecycleOwner)  { newList->
             newList.forEach{newshoe ->
                 val card:ItemListBinding=DataBindingUtil.inflate(inflater,R.layout.item_list,container,false)
                 card.shoes=newshoe
+
                 binding.linear.addView(card.root)
 
             }
         }
-       
+
         setHasOptionsMenu(true)
         return binding.root
     }
