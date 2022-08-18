@@ -33,7 +33,7 @@ class ShoeListingFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_listing, container, false)
+           FragmentShoeListingBinding.inflate(inflater, container, false)
         binding.btnFloatingAction.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_shoeListingFragment_to_shoeDetailFragment)
 
@@ -149,6 +149,7 @@ class ShoeListingFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.logout -> findNavController().navigate(R.id.action_shoeListingFragment_to_loginFragment)
+
         }
         return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
                 || super.onOptionsItemSelected(item)
